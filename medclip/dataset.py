@@ -154,7 +154,8 @@ class MedCLIPProcessor(CLIPProcessor):
         super().__init__(feature_extractor, tokenizer)
 
 class ImageTextContrastiveDataset(Dataset):
-    _labels_ = ['No Finding', 'Enlarged Cardiomediastinum', 'Cardiomegaly', 'Lung Lesion', 'Lung Opacity', 'Edema', 'Consolidation', 'Pneumonia', 'Atelectasis', 'Pneumothorax', 'Pleural Effusion', 'Pleural Other', 'Fracture', 'Support Devices']
+    _labels_ = ['ear-left', 'ear-right', 'nose-left', 'nose-right', 'throat', 'vc-closed', 'vc-open', 'Pneumonia', 
+          'Atelectasis', 'Pneumothorax', 'Pleural Effusion', 'Pleural Other', 'Fracture', 'Support Devices']
     def __init__(self, datalist=['mimic-cxr-train', 'chexpert-train'], imgtransform=None) -> None:
         '''support data list in mimic-cxr-train, chexpert-train
         '''
