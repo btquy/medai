@@ -293,10 +293,10 @@ class ImageTextContrastiveDataset(Dataset):
             return study_sent
 
     def _preprocess_sentence_label(self):
-        self.sentence_label = self.sentence_label.drop_duplicates(subset='Reports')
-        self.sentence_label = self.sentence_label[self.sentence_label['Reports'].map(len)>2].reset_index(drop=True)
-        self.sentence_label['report'] = self.sentence_label['Reports']
-        self.sentence_label = self.sentence_label.drop('Reports', axis=1)
+        self.sentence_label = self.sentence_label.drop_duplicates(subset='reports')# R r
+        self.sentence_label = self.sentence_label[self.sentence_label['reports'].map(len)>2].reset_index(drop=True)# R r
+        self.sentence_label['report'] = self.sentence_label['reports']# R r
+        self.sentence_label = self.sentence_label.drop('reports', axis=1) # R r
         self.sentence_label = self.create_sent_segments(self.sentence_label)
         self.sentence_label = self.sentence_label[(self.sentence_label['report'].map(len)==1)]
         self.sentence_label['report'] = np.concatenate(self.sentence_label['report'].values)
