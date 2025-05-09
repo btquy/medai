@@ -1,4 +1,4 @@
-Reports,ear-left,ear-right,nose-left,nose-right,throat,vc-closed,vc-open,Pneumonia,Atelectasis,Pneumothorax,Pleural Effusion,Pleural Other,Fracture,Support Devices
+report,ear-left,ear-right,nose-left,nose-right,throat,vc-closed,vc-open,Pneumonia,Atelectasis,Pneumothorax,Pleural Effusion,Pleural Other,Fracture,Support Devices
 white discharge on the posterior wall of the pharynx  edema and erythema of the arytenoid cartilages  posterior commissure hypertrophy  vocal cords are edematous  ventricular obliteration,0,0,0,0,0,0,1,0,0,0,0,0,0,0
 superior septal deviation  polypoid degeneration of the middle turbinate,0,0,1,0,0,0,0,0,0,0,0,0,0,0
 a spur on the septum,0,0,1,0,0,0,0,0,0,0,0,0,0,0
